@@ -57,7 +57,7 @@ Fica a seu critério escolher qual vai ser o nível de complexidade das senhas u
 ![](https://drive.google.com/uc?export=view&id=14XkKklaU9NW55laRa3H0hTdxZkneJJXa)
 
 **Gostaria que todas as configurações feitas sejam aplicadas imediatamente?**  <br/>
-**SIM**, isso vai valer a parti de agora no banco de dados.
+**SIM**, isso vai valer a partir de agora no banco de dados.
 
 ![](https://drive.google.com/uc?export=view&id=14ZLmZtk2nFDCUc9xASRDALOgfzaxzU4D)
 
