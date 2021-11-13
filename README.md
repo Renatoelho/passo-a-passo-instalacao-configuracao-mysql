@@ -36,27 +36,27 @@ systemctl status mysql
 sudo mysql_secure_installation
 ````
 
-**Usar o pluing de validação de senhas?** 
+**Usar o pluing de validação de senhas?**  <br/>
 Fica a seu critério escolher qual vai ser o nível de complexidade das senhas usadas no seu banco de dados, nesse exemplo vou escolher **NÂO** e definir uma senha mais simples, pois como é um ambiente de testes, mas em produção não é aconselhável essa abordagem.  
 
 ![](https://drive.google.com/uc?export=view&id=14PpwnXRekvvMt-ATQ0eZ036T_BEq3wIW)
 
-**Remover usuário anônimo?** 
+**Remover usuário anônimo?**  <br/>
 **SIM**, pois pode evitar problemas futuros.
 
 ![](https://drive.google.com/uc?export=view&id=14S1lqr86E0eseNxoQj5v8XoH9VJwBmgv)
 
-**Acesso remoto liberado?** 
+**Acesso remoto liberado?**  <br/>
 **SIM**, é interessante esse acesso estar liberado para aplicações que vão ficar online, mas com muito cuidado.
 
 ![](https://drive.google.com/uc?export=view&id=14SyHcJsdzcpT1dgMBksH7wh8U0ii9NC3)
 
-**Remover o database test?**
-**SIM**, isso vai evitar o acumulo de Databases desnecessários.
+**Remover o database test?**  <br/>
+**SIM**, isso vai evitar o acumulo de databases desnecessários.
 
 ![](https://drive.google.com/uc?export=view&id=14XkKklaU9NW55laRa3H0hTdxZkneJJXa)
 
-**Gostaria que todas as configurações feitas sejam aplicadas imediatamente?** 
+**Gostaria que todas as configurações feitas sejam aplicadas imediatamente?**  <br/>
 **SIM**, isso vai valer a parti de agora no banco de dados.
 
 ![](https://drive.google.com/uc?export=view&id=14ZLmZtk2nFDCUc9xASRDALOgfzaxzU4D)
@@ -130,4 +130,4 @@ Agora você já tem um banco de dados **MySQL instalado e configurado**, que per
 
 **Até breve!**
 
-**Referências:**  <br/><font size="1">Dev.mysql.com, MySQL APT Repository. Disponível em: https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/. Acesso em: 13 nov. 2021.  <br/>Dev.mysql.com, mysql_secure_installation. Disponível em: <https://dev.mysql.com/doc/refman/8.0/en/mysql-secure-installation.html>. Acesso em: 13 nov. 2021.  <br/></font>
+**Referências:**  <br/><font size="1">Dev.mysql.com, **MySQL APT Repository.** Disponível em: https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/. Acesso em: 13 nov. 2021.  <br/>Dev.mysql.com, **mysql_secure_installation.** Disponível em: <https://dev.mysql.com/doc/refman/8.0/en/mysql-secure-installation.html>. Acesso em: 13 nov. 2021.  <br/></font>
