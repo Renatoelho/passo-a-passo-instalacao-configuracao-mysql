@@ -28,7 +28,7 @@ systemctl status mysql
 
 ![](https://drive.google.com/uc?export=view&id=14Lu2HkYjibw4PsNGrxTcC-YFoI_Az8yd)
 
->> **Observação:** para o passo seguinte é importante que o serviço do MySQL esteja em execução.
+>> **Observação:** Para o passo seguinte é importante que o serviço do MySQL esteja em execução.
 
 ## **3º Passo** - Configurações de segurança para acesso ao MYSQL
 
@@ -37,7 +37,7 @@ sudo mysql_secure_installation
 ````
 
 **Usar o pluing de validação de senhas?**  <br/>
-Fica a seu critério escolher qual vai ser o nível de complexidade das senhas usadas no seu banco de dados, nesse exemplo vou escolher **NÂO** e definir uma senha mais simples, pois como é um ambiente de testes, mas em produção não é aconselhável essa abordagem.  
+Fica a seu critério escolher qual será o nível de complexidade das senhas usadas no seu banco de dados. No exemplo abaixo, escolhi **NÂO** e defini uma senha mais simples, pois como é um ambiente de testes, mas em produção não é aconselhável essa abordagem.  
 
 ![](https://drive.google.com/uc?export=view&id=14PpwnXRekvvMt-ATQ0eZ036T_BEq3wIW)
 
@@ -47,17 +47,17 @@ Fica a seu critério escolher qual vai ser o nível de complexidade das senhas u
 ![](https://drive.google.com/uc?export=view&id=14S1lqr86E0eseNxoQj5v8XoH9VJwBmgv)
 
 **Acesso remoto liberado?**  <br/>
-**SIM**, é interessante esse acesso estar liberado para aplicações que vão ficar online, mas com muito cuidado.
+**SIM**. É interessante esse acesso estar liberado para aplicações que ficarão online, mas com muito cuidado.
 
 ![](https://drive.google.com/uc?export=view&id=14SyHcJsdzcpT1dgMBksH7wh8U0ii9NC3)
 
 **Remover o database test?**  <br/>
-**SIM**, isso vai evitar o acumulo de databases desnecessários.
+**SIM**. Isso evitará o acumulo de databases desnecessários.
 
 ![](https://drive.google.com/uc?export=view&id=14XkKklaU9NW55laRa3H0hTdxZkneJJXa)
 
-**Gostaria que todas as configurações feitas sejam aplicadas imediatamente?**  <br/>
-**SIM**, isso vai valer a partir de agora no banco de dados.
+**Deseja que todas as configurações realizadas sejam aplicadas imediatamente?**  <br/>
+**SIM**. Isso vai valer a partir de agora no banco de dados.
 
 ![](https://drive.google.com/uc?export=view&id=14ZLmZtk2nFDCUc9xASRDALOgfzaxzU4D)
 
@@ -71,13 +71,13 @@ sudo mysql -u root -p
 
 ![](https://drive.google.com/uc?export=view&id=14iNCayZe1L1xnCnv4LDbUlUrlss1HbCs)
 
-Tudo funcionando.
+Tudo funcionando!
 
 ## **5º Passo** - Liberando acesso remoto ao MySQL
 
-Agora para efetivar o acesso remoto ao servidor temos 2 itens que serão necessários configurar, que é o arquivo de configurações do MySQL e liberar a porta 3306 do servidor que está hospedando o banco de dados.
+Agora, para efetivar o acesso remoto ao servidor, temos 2 itens que serão necessários configurar: o arquivo de configurações do MySQL e a liberação da porta 3306 do servidor que está hospedando o banco de dados.
 
-- Usando um editor de texto (no caso aqui vou usar o nano) acesse o arquivo listado abaixo e procure o item ````bind-address```` e atualize o IP ````127.0.0.1```` para ````0.0.0.0````, isso vai possibilitar acesso a partir de qualquer origem. 
+- Usando um editor de texto (nesse caso, o nano), acesse o arquivo listado abaixo e procure o item ````bind-address```` e atualize o IP ````127.0.0.1```` para ````0.0.0.0````, pois isso possibilitará o acesso a partir de qualquer origem. 
 
 ````
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
@@ -108,7 +108,7 @@ sudo ufw status verbose
 
 ![](https://drive.google.com/uc?export=view&id=14knt0sHSlkPGVkDxata9Sg6xAx6THE9a)
 
->> **Observação:** Essas configurações devem ser feitas com cuidado para evitar problemas futuros.
+>> **Observação:** Essas configurações devem ser feitas com cuidado, para evitar problemas futuros.
 	
 ## **6º Passo** - Reiniciar o serviço do banco de dados
 
@@ -126,7 +126,7 @@ sudo systemctl status mysql
 
 ![](https://drive.google.com/uc?export=view&id=14kwBtqqyHvBkoeVgP48BXGK-FkIi5qgb)
 
-Agora você já tem um banco de dados **MySQL instalado e configurado**, que permite acessos remotos. Em breve eu volto para ensinar os principais comandos SQL que ajudaram na administração do seu banco de dados.
+Agora você já tem um banco de dados **MySQL instalado e configurado**, que permite acessos remotos. Em breve eu voltarei para ensinar os principais comandos SQL, que ajudaram na administração do seu banco de dados.
 
 **Até breve!**
 
